@@ -56,7 +56,7 @@ async function run() {
             res.send(result);
         });
 
-        app.patch('/odrers/:id', async (req, res) => {
+        app.patch('/orders/:id', async (req, res) => {
             const id = req.params.id;
             const status = req.body.status;
             const query = { _id: ObjectId(id) }
